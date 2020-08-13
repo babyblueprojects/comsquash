@@ -14,7 +14,7 @@ function my_pmprorh_init() {
 	if ( ! function_exists( 'pmprorh_add_registration_field' ) ) {
 		return false;
 	}
-
+	
 	// Define the fields.
 	$fields = array();
 	$fields[] = new PMProRH_Field(
@@ -32,7 +32,57 @@ function my_pmprorh_init() {
 			)
 		)
 	);
+	
+	$fields[] = new PMProRH_Field(
+		'guardianfirst',							// template text
+		'text',								// template field
+		array(
+			'label'		=> 'Parent/Guardian First Name',		// template label
+			'class'		=> 'guardianfirst',		// template class
+			'profile'	=> true,			// show in user profile
+			'memberslistcsv'	=> true,	// show in csv export
+			'required'	=> true,			// make this field required
+			'levels'	=> 5,			// make this field required
+		)
+	);
+	
+	$fields[] = new PMProRH_Field(
+		'guardianlast',							// template text
+		'text',								// template field
+		array(
+			'label'		=> 'Parent/Guardian Last Name',		// template label
+			'class'		=> 'guardianlast',		// template class
+			'profile'	=> true,			// show in user profile
+			'memberslistcsv'	=> true,	// show in csv export
+			'required'	=> true,			// make this field required
+			'levels'	=> 5,			// make this field required
+		)
+	);
+	
+	$fields[] = new PMProRH_Field(
+		'guardianrelationship',							// template text
+		'text',								// template field
+		array(
+			'label'		=> 'Parent/Guardian Relationship to Junior',		// template label
+			'class'		=> 'guardianrelationship',		// template class
+			'profile'	=> true,			// show in user profile
+			'memberslistcsv'	=> true,	// show in csv export
+			'required'	=> true,			// make this field required
+			'levels'	=> 5,			// make this field required
+		)
+	);
 
+	$fields[] = new PMProRH_Field(
+		'cellphone',							// template text
+		'text',								// template field
+		array(
+			'label'		=> 'Contact Number',		// template label
+			'class'		=> 'cellphone',		// template class
+			'profile'	=> true,			// show in user profile
+			'memberslistcsv'	=> true,	// show in csv export
+			'required'	=> true,			// make this field required
+		)
+	);
 
 	$fields[] = new PMProRH_Field(
 		'ethnicity',									// input name, will also be used as meta key
@@ -61,18 +111,6 @@ function my_pmprorh_init() {
 				'otherethnic'	=> 'Other Ethnic Group',		// option 16
 			)
 		)		
-	);
-
-	$fields[] = new PMProRH_Field(
-		'cellphone',							// template text
-		'text',								// template field
-		array(
-			'label'		=> 'Contact Number',		// template label
-			'class'		=> 'cellphone',		// template class
-			'profile'	=> true,			// show in user profile
-			'memberslistcsv'	=> true,	// show in csv export
-			'required'	=> true,			// make this field required
-		)
 	);
 
 	$fields[] = new PMProRH_Field(
@@ -347,7 +385,7 @@ function my_pmprorh_init() {
 	// Add the fields into a new checkout_boxes are of the checkout page.
 	foreach ( $fields as $field ) {
 		pmprorh_add_registration_field(
-			'after_email',				// location on checkout page
+			'checkout_boxes',				// location on checkout page
 			$field							// PMProRH_Field object
 		);
 	}

@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Welcome to ComSquash</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		a[x-apple-data-detectors] {color: inherit !important;}
+	</style>
+
+</head>
+<body style="margin: 0; padding: 0;">
+	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+			<td style="padding: 0px 0 30px 0;">
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; border: 1px solid #cccccc;">
+	<tr>
+		<td align="center" bgcolor="#ff9f1c" style="padding: 30px 0 30px 0;">
+			<img src="https://secureservercdn.net/160.153.138.53/a6d.75e.myftpupload.com/wp-content/uploads/2020/08/cropped-COMSC-Logo-Main-scaled-2-2048x451.jpg" alt="Creating Email Magic." width="700" height="150" style="display: block;" />
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor="#ffffff" style="padding: 40px 30px 0px 30px;">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+				<tr>
+					<td style="color: #153643; font-family: Arial, sans-serif;">
+						<h1 style="font-size: 24px; margin: 0; text-align:center;">Thank you for joining the !!sitename!!. Your membership account is now active!</h1><br><hr>
+					</td>
+				</tr>
+				<tr>
+					<td style="color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 24px; padding: 20px 0 30px 0;">
+						!!membership_level_confirmation_message!!
+						<p>Below are membership details.</p>
+
+						<ul>
+						<li>Account: !!display_name!! (!!user_email!!)</li>
+						<li>Membership Level: !!membership_level_name!!</li>
+						<li>Membership Fee: !!membership_cost!!</li>
+						</ul>
+
+						!!membership_expiration!! !!discount_code!!
+
+						<p>
+							Invoice #!!invoice_id!! on !!invoice_date!!<br />
+							Total Billed: !!invoice_total!!
+						</p>
+						<p>
+							Billing Information:<br />
+							<ul>
+						        <li>!!billing_address!!</li>
+						        </ul>
+						</p>
+
+						<p>
+							!!cardtype!!: !!accountnumber!!<br />
+							Expires: !!expirationmonth!!/!!expirationyear!!
+						</p>
+
+						<p>Log in to your membership account here: !!login_link!!</p>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor="#808080" style="padding: 30px 30px;">
+    		<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+				<tr>
+					<td style="color: #ffffff; font-family: Arial, sans-serif; font-size: 14px;">
+						<p style="margin: 0;">&reg; City of Manchester Squash Club<br/><br>
+					 <a href="https://www.comsquash.club/login/" style="color: #ffffff;">Login</a> to your account</p>
+					</td>
+					<td align="right">
+						<table border="0" cellpadding="5" cellspacing="0" style="border-collapse: collapse;">
+								<td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
+								<td>
+									<a href="https://www.facebook.com/CoMSquashClub/" class="fa fa-facebook" style="color:white; font-size: 15px; background-color:#ff9f1c; padding:20px; width: 15px; text-align: center; margin: 5px 2px; border-radius: 50%;  text-decoration: none;"></a>
+								</td>
+								<td>
+									<a href="https://twitter.com/Cityofmansquash?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Eprofile%3Acityofmansquash&ref_url=https%3A%2F%2Fwww.comsquash.club%2Fnews%2F" class="fa fa-twitter" style="color:white; font-size: 15px; background-color:#ff9f1c; padding:20px; width: 15px; text-align: center; margin: 5px 2px; border-radius: 50%;  text-decoration: none;"></a>
+								</td>
+								<td>
+									<a href="https://www.instagram.com/comsquashclub/" class="fa fa-instagram" style="color:white; font-size: 15px; background-color:#ff9f1c; padding:20px; width: 15px; text-align: center; margin: 5px 2px; border-radius: 50%;  text-decoration: none;"></a>
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
